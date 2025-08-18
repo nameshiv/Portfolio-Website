@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shivam Sinha — Portfolio</title>
+    <meta name="description" content="Developer portfolio. Projects, skills, and contact." />
+    <meta name="theme-color" content="#0b1220" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a href="#home" class="brand" aria-label="Home">
+          <span class="brand-mark">SS</span>
+          <span class="brand-text">Shivam's Portfolio</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <!-- <li>
+            <button class="theme-toggle" aria-label="Toggle color theme">
+              <span class="icon-sun" aria-hidden="true"></span>
+              <span class="icon-moon" aria-hidden="true"></span>
+            </button> -->
+            <li>
+                <button class="theme-toggle" aria-label="Toggle color theme">
+                  <img src="brightness.png" alt="Light mode" class="icon-sun" />
+                </button>
+            </li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container section" aria-label="Hero">
+        <div class="hero-text">
+          <p class="eyebrow">Full Stack Web Developer</p>
+          <p class="greeting">Hi there 👋 I'm</p>
+          <h1 class="gradient-text">Shivam Sinha</h1>
+          <p class="typewriter-row">
+            <span id="typewriter" aria-live="polite"></span>
+            <span class="cursor" aria-hidden="true">&nbsp;</span>
+          </p>
+          <p class="subhead">
+            I craft accessible, responsive interfaces with a focus on clarity,
+            performance, and great UX.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="socials" aria-label="Social links">
+            <a href="https://github.com/nameshiv" target="_blank" rel="noreferrer noopener" aria-label="GitHub" class="social-link btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.35-1.79-1.35-1.79-1.11-.76.08-.75.08-.75 1.22.09 1.86 1.25 1.86 1.25 1.09 1.86 2.86 1.32 3.56 1.01.11-.79.43-1.32.78-1.62-2.67-.31-5.47-1.34-5.47-5.97 0-1.32.47-2.39 1.24-3.23-.13-.31-.54-1.56.12-3.26 0 0 1.01-.32 3.31 1.23a11.53 11.53 0 0 1 6.03 0c2.3-1.55 3.31-1.23 3.31-1.23.66 1.7.25 2.95.12 3.26.77.84 1.24 1.91 1.24 3.23 0 4.64-2.8 5.65-5.48 5.96.44.38.83 1.12.83 2.26v3.35c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shivam-sinha-0b365a282/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" class="social-link btn-icon linkedin">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 21.5H3.56V8.98h3.38V21.5ZM5.24 7.37a1.96 1.96 0 1 1 0-3.92 1.96 1.96 0 0 1 0 3.92Zm16.26 14.13h-3.37v-6.05c0-1.44-.03-3.29-2.01-3.29-2.02 0-2.33 1.58-2.33 3.19v6.15H10.4V8.98h3.24v1.71h.05c.45-.86 1.56-1.76 3.2-1.76 3.43 0 4.07 2.26 4.07 5.21v7.36Z"/></svg>
+            </a>
+            <a href="https://www.hackerrank.com/profile/sinhashivam888" target="_blank" rel="noreferrer noopener" aria-label="HackerRank" class="social-link btn-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank" width="20" height="20" />
+            </a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="avatar-ring">
+            <div class="ring" aria-hidden="true"></div>
+            <div class="avatar">
+                <img src="avatar2.png" alt="portrait" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container section" id="about" aria-label="About">
+        <div class="section-head">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-card">
+          <div class="about-flex">
+            <div class="flip-card" aria-label="Developer image card" tabindex="0">
+              <div class="flip-inner">
+                <div class="flip-face flip-front">
+                  <img src="./developer-image.png?v=2" alt="Developer at work" class="contain" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop'" />
+                </div>
+                <div class="flip-face flip-back">
+                  <img src="./developer-image.png?v=2" alt="Developer at work (flipped)" class="contain mirror" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop'" />
+                </div>
+              </div>
+            </div>
+            <div class="about-copy">
+              <p>
+                I'm a final‑year Information Technology student with a strong passion for web development and a keen interest in full‑stack development. Over time, I’ve built a solid foundation in HTML, CSS, and JavaScript, and I’m actively strengthening my skills by building projects and exploring new tools and frameworks.
+              </p>
+              <p>
+                Beyond just coding, I enjoy understanding how different parts of an application connect — from crafting intuitive user interfaces to handling data at the backend. My goal is to keep learning, improving, and contributing to real‑world projects where I can grow as a developer while creating meaningful solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education container section" id="education" aria-label="Education">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p>Academic background</p>
+        </div>
+        <div class="education-grid">
+          <article class="edu-card">
+            <div class="edu-header">
+              <div class="edu-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 14.5L6 14v3l6 3 6-3v-3l-6 3.5Z"/></svg>
+              </div>
+              <div class="edu-meta">
+                <h3>MCKV INSTITUTE OF ENGINEERING</h3>
+                <p class="edu-details">B.Tech Information Technology • 2022 - 2026</p>
+              </div>
+            </div>
+            <ul class="edu-list">
+              <li><strong>CGPA:</strong> 8.34</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills container section" id="skills" aria-label="Skills">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-cards">
+          <div class="skill-card-lg" data-level="90">
+            <div class="skill-header">
+              <span class="skill-title">JavaScript</span>
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="JavaScript proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+<!-- Java moved back to original position -->
+
+          <div class="skill-card-lg" data-level="95">
+            <div class="skill-header">
+              <span class="skill-title">HTML</span>
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="HTML proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="85">
+            <div class="skill-header">
+              <span class="skill-title">CSS</span>
+              <span class="skill-icon-img" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" focusable="false" aria-label="CSS3">
+                  <path fill="#264DE4" d="m94.175 0-8.033 89.99L50.034 100l-36.01-9.996L6 0z"/>
+                  <path fill="#2965F1" d="m79.265 84.26 6.864-76.9H50.087v84.988z"/>
+                  <path fill="#EBEBEB" d="m24.396 40.74.99 11.039h24.702V40.74zm25.692-22.342h-27.68l1.003 11.038h26.676zm-.001 62.495V69.408l-.048.013-12.294-3.32-.786-8.803H25.878l1.547 17.332 22.612 6.277z"/>
+                  <path fill="#fff" d="m63.642 51.779-1.281 14.316-12.312 3.323v11.484l22.63-6.272.166-1.865 2.594-29.06.27-2.965L77.7 18.398H50.05v11.038h15.555L64.599 40.74H50.05v11.04z"/>
+                </svg>
+              </span>
+            </div>
+            <div class="progress" aria-label="CSS proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="90">
+            <div class="skill-header">
+              <span class="skill-title">React</span>
+              <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="React proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="80">
+            <div class="skill-header">
+              <span class="skill-title">Node.js</span>
+              <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Node.js proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="75">
+            <div class="skill-header">
+              <span class="skill-title">Express</span>
+              <img src="https://cdn.simpleicons.org/express/ffffff" alt="Express" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Express proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="85">
+            <div class="skill-header">
+              <span class="skill-title">MongoDB</span>
+              <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="MongoDB proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="70">
+            <div class="skill-header">
+              <span class="skill-title">MySQL</span>
+              <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="MySQL proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="95">
+            <div class="skill-header">
+              <span class="skill-title">Tailwind CSS</span>
+              <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Tailwind CSS proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="85">
+            <div class="skill-header">
+              <span class="skill-title">Git &amp; GitHub</span>
+              <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Git &amp; GitHub proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="75">
+            <div class="skill-header">
+              <span class="skill-title">Java</span>
+              <span class="skill-icon-img" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" focusable="false" aria-label="Java">
+                  <path fill="#5382A1" d="M36.753 77.336s-3.822 2.222 2.72 2.974c7.924.904 11.973.774 20.706-.879 0 0 2.296 1.44 5.502 2.687-19.576 8.39-44.304-.486-28.928-4.782M34.36 66.387s-4.286 3.173 2.26 3.85c8.464.873 15.149.945 26.716-1.283 0 0 1.6 1.622 4.116 2.51-23.668 6.92-50.03.545-33.092-5.077"/>
+                  <path fill="#E76F00" d="M54.527 47.815c4.823 5.554-1.268 10.551-1.268 10.551s12.248-6.322 6.623-14.24C54.63 36.743 50.6 33.074 72.41 20.425c0 0-34.234 8.55-17.883 27.39"/>
+                  <path fill="#5382A1" d="M80.418 85.434s2.827 2.33-3.115 4.133c-11.3 3.423-47.03 4.456-56.956.136-3.568-1.552 3.124-3.706 5.228-4.159 2.195-.475 3.45-.387 3.45-.387-3.968-2.795-25.648 5.49-11.012 7.861 39.913 6.473 72.757-2.914 62.405-7.584M38.59 55.044s-18.174 4.317-6.436 5.884c4.956.664 14.837.514 24.04-.258 7.522-.634 15.075-1.983 15.075-1.983s-2.653 1.136-4.571 2.446c-18.457 4.854-54.11 2.596-43.846-2.37 8.68-4.195 15.738-3.72 15.738-3.72m32.603 18.224c18.762-9.75 10.088-19.118 4.033-17.856-1.484.309-2.146.576-2.146.576s.551-.863 1.603-1.236c11.978-4.212 21.19 12.42-3.867 19.007 0 0 .29-.26.377-.491"/>
+                  <path fill="#E76F00" d="M59.882 0s10.39 10.395-9.855 26.377C33.793 39.2 46.325 46.51 50.021 54.861c-9.477-8.55-16.432-16.077-11.766-23.082C45.103 21.496 64.075 16.51 59.882 0"/>
+                  <path fill="#5382A1" d="M40.434 99.686c18.009 1.153 45.663-.64 46.318-9.161 0 0-1.259 3.23-14.883 5.796-15.371 2.892-34.329 2.555-45.573.7 0 0 2.302 1.906 14.138 2.665"/>
+                </svg>
+              </span>
+            </div>
+            <div class="progress" aria-label="Java proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="80">
+            <div class="skill-header">
+              <span class="skill-title">Python</span>
+              <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Python proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+
+          <div class="skill-card-lg" data-level="70">
+            <div class="skill-header">
+              <span class="skill-title">Firebase</span>
+              <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" width="24" height="24" class="skill-icon-img" />
+            </div>
+            <div class="progress" aria-label="Firebase proficiency">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+            <div class="progress-meta"><span class="progress-label" aria-live="polite">0%</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects container section" id="projects" aria-label="Projects">
+        <div class="section-head">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card">
+            <img class="card-media" src="newsApp.png" alt="News Brilliance web app screenshot" loading="lazy" />
+            <div class="card-body">
+              <h3>News Brilliance — News Web App</h3>
+              <p>Responsive news app that fetches real-time articles via NewsAPI with search and category filters.</p>
+              <ul class="tag-list">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>REST API</li><li>Vercel</li><li>GitHub</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm btn-outline" href="https://news-web-app-git-main-nameshivs-projects.vercel.app/" target="_blank"  rel="noreferrer noopener">Live Demo</a>
+                <a class="btn btn-sm btn-ghost"   href="https://github.com/nameshiv/NewsWebApp_vercel" target="_blank" rel="noreferrer noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="./candygame.png" alt="Candy Match Game screenshot" loading="lazy" />
+            <div class="card-body">
+              <h3>Candy Match Game</h3>
+              <p>Drag-and-swap mechanics, match detection, smooth crush animations, and live scoring using vanilla JS.</p>
+              <ul class="tag-list">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="card-actions">
+               
+                <a class="btn btn-sm btn-outline" href="https://nameshiv.github.io/CandyMatchGame/" target="_blank" rel="noreferrer noopener">Live Demo</a>
+                <a class="btn btn-sm btn-ghost" href="https://github.com/nameshiv/CandyMatchGame" target="_blank" rel="noreferrer noopener">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact container section" id="contact" aria-label="Contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Let’s work together</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" id="nameError" role="alert"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" id="emailError" role="alert"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <small class="error" id="messageError" role="alert"></small>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <!-- <a id="emailInstead" class="btn btn-ghost" href="mailto:sinhashivam888@gmail.com?subject=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer">Email instead</a> -->
+            <a id="emailInstead" class="btn btn-ghost" 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=thenameisking7@gmail.com&su=Portfolio%20Inquiry" 
+            target="_blank" rel="noopener noreferrer">
+            Email instead
+         </a>
+         
+        </div>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span>  All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
