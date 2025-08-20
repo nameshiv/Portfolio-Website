@@ -83,7 +83,7 @@ initTheme();
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme') || 'system';
-    const next = current === 'light' ? 'dark' : current === 'dark' ? 'system' : 'light';
+    const next = current === 'light' ? 'dark' : 'light';
     applyThemeAttr(next);
     setStoredTheme(next);
   });
@@ -244,4 +244,5 @@ if (yearEl) yearEl.textContent = String(new Date().getFullYear());
       if (w) { e.preventDefault(); }
     } catch (_) { /* noop */ }
   });
+
 })(); 
